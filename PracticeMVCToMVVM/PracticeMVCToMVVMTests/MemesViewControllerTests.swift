@@ -6,7 +6,17 @@
 //
 
 import XCTest
+@testable import PracticeMVCToMVVM
 
 class MemesViewControllerTests: XCTestCase {
     
+    func test_canInit() throws {
+        let bundle = Bundle(for: AppDelegate.self)
+        let sb = UIStoryboard(name: "Main", bundle: bundle)
+        
+        let initialVC = sb.instantiateInitialViewController()
+        let navigation = try XCTUnwrap(initialVC as? UINavigationController)
+        
+        _ = try XCTUnwrap(navigation.topViewController as? MemesViewController)
+    }
 }
