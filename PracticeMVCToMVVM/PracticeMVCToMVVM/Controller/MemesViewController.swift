@@ -15,6 +15,8 @@ final class MemesViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Memes"
+        
         setupUI()
         
         getMemes()

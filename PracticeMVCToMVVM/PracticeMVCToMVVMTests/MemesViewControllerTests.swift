@@ -19,4 +19,18 @@ class MemesViewControllerTests: XCTestCase {
         
         _ = try XCTUnwrap(navigation.topViewController as? MemesViewController)
     }
+    
+    func test_viewDidLoad_setTitle() throws {
+        let bundle = Bundle(for: AppDelegate.self)
+        let sb = UIStoryboard(name: "Main", bundle: bundle)
+        
+        let initialVC = sb.instantiateInitialViewController()
+        let navigation = try XCTUnwrap(initialVC as? UINavigationController)
+        
+        let sut = try XCTUnwrap(navigation.topViewController as? MemesViewController)
+
+        sut.loadViewIfNeeded()
+        
+        XCTAssertEqual(sut.title, "Memes")
+    }
 }
