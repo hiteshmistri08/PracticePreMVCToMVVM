@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6755AEDD282C278300A02C80 /* MemesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6755AEDC282C278300A02C80 /* MemesViewController.swift */; };
+		6755AEDD282C278300A02C80 /* MemesViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6755AEDC282C278300A02C80 /* MemesViewControllerTests.swift */; };
 		675CAB25282AD4EC009D805E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675CAB24282AD4EC009D805E /* AppDelegate.swift */; };
 		675CAB27282AD4EC009D805E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675CAB26282AD4EC009D805E /* SceneDelegate.swift */; };
 		675CAB2C282AD4EC009D805E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 675CAB2A282AD4EC009D805E /* Main.storyboard */; };
@@ -32,7 +32,7 @@
 
 /* Begin PBXFileReference section */
 		6755AED3282C271700A02C80 /* PracticeMVCToMVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PracticeMVCToMVVMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6755AEDC282C278300A02C80 /* MemesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemesViewController.swift; sourceTree = "<group>"; };
+		6755AEDC282C278300A02C80 /* MemesViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemesViewControllerTests.swift; sourceTree = "<group>"; };
 		675CAB21282AD4EC009D805E /* PracticeMVCToMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PracticeMVCToMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		675CAB24282AD4EC009D805E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		675CAB26282AD4EC009D805E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,7 +68,7 @@
 		6755AED4282C271700A02C80 /* PracticeMVCToMVVMTests */ = {
 			isa = PBXGroup;
 			children = (
-				6755AEDC282C278300A02C80 /* MemesViewController.swift */,
+				6755AEDC282C278300A02C80 /* MemesViewControllerTests.swift */,
 			);
 			path = PracticeMVCToMVVMTests;
 			sourceTree = "<group>";
@@ -243,7 +243,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6755AEDD282C278300A02C80 /* MemesViewController.swift in Sources */,
+				6755AEDD282C278300A02C80 /* MemesViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
