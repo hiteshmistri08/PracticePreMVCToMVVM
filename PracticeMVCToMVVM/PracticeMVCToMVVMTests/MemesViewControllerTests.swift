@@ -22,6 +22,14 @@ class MemesViewControllerTests: XCTestCase {
         XCTAssertEqual(sut.title, "Memes")
     }
     
+    func test_viewDidLoad_configureTableView() throws {
+        let sut = try makeSUT()
+
+        sut.loadViewIfNeeded()
+        
+        XCTAssertNotNil(sut.tableView.dataSource, "data source")
+    }
+    
     //MARK: - Helpers
     
     private func makeSUT() throws -> MemesViewController {
