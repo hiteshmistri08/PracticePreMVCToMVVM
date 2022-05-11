@@ -11,26 +11,26 @@ import XCTest
 class MemesViewControllerTests: XCTestCase {
     
     func test_canInit() throws {
-        let bundle = Bundle(for: AppDelegate.self)
-        let sb = UIStoryboard(name: "Main", bundle: bundle)
-        
-        let initialVC = sb.instantiateInitialViewController()
-        let navigation = try XCTUnwrap(initialVC as? UINavigationController)
-        
-        _ = try XCTUnwrap(navigation.topViewController as? MemesViewController)
+        _ = try makeSUT()
     }
     
     func test_viewDidLoad_setTitle() throws {
-        let bundle = Bundle(for: AppDelegate.self)
-        let sb = UIStoryboard(name: "Main", bundle: bundle)
-        
-        let initialVC = sb.instantiateInitialViewController()
-        let navigation = try XCTUnwrap(initialVC as? UINavigationController)
-        
-        let sut = try XCTUnwrap(navigation.topViewController as? MemesViewController)
+        let sut = try makeSUT()
 
         sut.loadViewIfNeeded()
         
         XCTAssertEqual(sut.title, "Memes")
+    }
+    
+    //MARK: - Helpers
+    
+    private func makeSUT() throws -> MemesViewController {
+        let bundle = Bundle(for: AppDelegate.self)
+        let sb = UIStoryboard(name: "Main", bundle: bundle)
+        
+        let initialVC = sb.instantiateInitialViewController()
+        let navigation = try XCTUnwrap(initialVC as? UINavigationController)
+
+        return try XCTUnwrap(navigation.topViewController as? MemesViewController)
     }
 }
